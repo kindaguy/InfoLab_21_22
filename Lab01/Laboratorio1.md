@@ -42,7 +42,7 @@ __mv primo2.C secondo.C__
 __mv secondo.C ../__  
 
 # Eserczio 4 (ssh,scp)
-Per completare questo esercizio è  necessario essere registrati al Laboratorio di Calcolo (LdC) del Dipartimento di Fisica. Chi non l'avesse ancora fatto è pregato di provvedere seguendo le istruzioni fornite sul sito del corso (sito [WWW.L30-INFORMATICA.FISICA.UNIMI.IT](http://www.l30-informatica.fisica.unimi.it))
+Per completare questo esercizio è  necessario essere registrati al Laboratorio di Calcolo (LdC) del Dipartimento di Fisica. Chi non l'avesse ancora fatto è pregato di provvedere seguendo le istruzioni fornite sul sito Ariel del corso.
 
 1. Collegarsi a (una) macchina del LdC con il comando  
 __ssh `<usermame>@tolab.fisica.unimi.it`__  
@@ -53,4 +53,4 @@ __scp secondo.C `<username>@tolab.fisica.unimi.it:~`__
 Nota: i ":" servono e il simbolo  __`~`__ indica la vostra _home_ 
 
 ## Nota
-Potete trovare altri comandi e opzioni, insieme ad un breve riassunto di quanto visto oggi nel documento "Il mio primo giorno in Laboratorio di Calcolo" nella sezione "Materiale Didattico" del sito [www.l30-informatica.fisica.unmi.it](http://www.l30-informatica.fisica.unimi.it)
+Potete trovare altri comandi e opzioni, insieme ad un breve riassunto di quanto visto oggi nel documento "Il mio primo giorno in Laboratorio di Calcolo" sul sito Ariel del corso.
