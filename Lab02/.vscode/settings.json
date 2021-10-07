@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "selezione.C": "cpp",
+        "helloworld.C": "cpp",
+        "template.C": "cpp",
+        "ostream": "cpp",
+        "sel_monca.C": "cpp",
+        "sel_annidata.C": "cpp",
+        "iter_prec.C": "cpp"
+    }
+}
