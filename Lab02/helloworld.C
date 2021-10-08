@@ -12,7 +12,20 @@ using namespace std; //Rimarra` un mistero, ma va messo....
 
 int main(){
 
+    int a=10;
+    int b;
+
     cout << "Hello world!" << endl; //Sampa a video!
+
+    cout << a << endl;
+
+    cin >> b ;
+
+    cout << "letto valore "<< b <<endl;
+    
+    cin >> a;
+
+    cout << "letto valore "<< a <<endl;
 
     return 0;
 }

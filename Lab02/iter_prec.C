@@ -17,7 +17,7 @@ int main(){
     cin >> a;
 
     //Il caricamento termina appena viene inserito lo 0
-    while(a >!= 0 ){
+    while(a != 0 ){
         conta = conta + 1;
         somma =  somma + a;
         cin >> a;

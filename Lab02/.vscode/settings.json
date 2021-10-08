@@ -6,6 +6,7 @@
         "ostream": "cpp",
         "sel_monca.C": "cpp",
         "sel_annidata.C": "cpp",
-        "iter_prec.C": "cpp"
+        "iter_prec.C": "cpp",
+        "mcdTama.C": "cpp"
     }
 }
