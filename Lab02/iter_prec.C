@@ -20,6 +20,7 @@ int main(){
     while(a >!= 0 ){
         conta = conta + 1;
         somma =  somma + a;
+        cin >> a;
     }
 
 
