@@ -45,9 +45,9 @@ int main(){
         //usare l'algoritmo serenamente, devo garantire che a>=b.
         //A questo punto faccio un gioco di scambi
         if(b>a){
-            appo_swap = a;
-            a=b;
-            b=appo_swap;   
+            appo_swap = a;  //Creo una copia del contenuto di a
+            a=b; //scrivo in a il contenuto di b. Il vecchio valore di a e` perso
+            b=appo_swap;  //scrivo in b il contenuto della "backup" del valore originale di a
         }
         //Se invece a e b sono gia` a posto, non devo fare nulla.
         //Ecco un esempio non banale di if "monco".
