@@ -21,7 +21,7 @@ int main(){
     int appo_swap;
 
 
-    cout << "Inserire a > b >= 0" << endl; //Sampa a video!
+    cout << "Inserire a , b > 0" << endl; //Sampa a video!
 
     cin >> a;
     appo=a;
