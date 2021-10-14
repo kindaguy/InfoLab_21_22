@@ -34,7 +34,5 @@ int main(){
         cout << endl << pluto[i] << endl;
     }
 
-
-
     return 0;
 }
