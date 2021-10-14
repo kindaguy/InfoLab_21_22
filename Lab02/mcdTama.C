@@ -20,15 +20,11 @@ int main(){
 
 
     cout << "Inserire a > b >= 0" << endl; //Sampa a video!
-
     cin >> a;
     appo=a;
-
     cin >> b ;
     appo1=b;
-
     cout << "letto valore "<< a <<endl;
-
     cout << "letto valore "<< b <<endl;
 
     //Manca il controllo a > b > 0
@@ -49,6 +45,11 @@ int main(){
 
         cout << endl << "NOPE!!!!" << endl;
     }
+
+
+
+
+    
     return 0;
 }
 

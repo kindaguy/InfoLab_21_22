@@ -1,0 +1,13 @@
+{
+    "files.associations": {
+        "prova_cast.C": "cpp",
+        "mcdTama.C": "cpp",
+        "iostream": "cpp",
+        "stat01.C": "cpp",
+        "mcdTamaFunz.C": "cpp",
+        "usoArray.C": "cpp",
+        "mcdTama_alt.C": "cpp",
+        "scratchpad.C": "cpp",
+        "mcdTamaCheck.C": "cpp"
+    }
+}
