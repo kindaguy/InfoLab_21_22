@@ -4,6 +4,7 @@
       "sol_3_3.C": "cpp",
       "sol_3_5.C": "cpp",
       "ostream": "cpp",
-      "esperimento_array.C": "cpp"
+      "esperimento_array.C": "cpp",
+      "helloworld.C": "cpp"
    }
 }

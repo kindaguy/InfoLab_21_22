@@ -46,8 +46,10 @@ int main(){
          if(appo < min)
             min = appo;
       }
-      accu += appo;
+      accu += appo; //accu= accu+appo
       accu2 += appo*appo;
+
+      
       appo = leggicheck(0);
    }
    //Finito caricamento

@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <cmath>
 using namespace std;
 
 /*
@@ -121,15 +121,12 @@ float stddev(float x[], int n){
 float media(float x[], int n){
 
     float accu = 0.f;
-    int i = 0;
+   
 
 
-
-    while(i < n){
-        accu  = accu + x[i];
-        i++; //aka i=i+1;
-    }
-
+   for(int i=0;i<n;i++)
+      accu += x[i];
+    
     //Valore restituito dalla funzione.
     return accu/n;
 }
