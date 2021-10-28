@@ -1,0 +1,10 @@
+{
+   "files.associations": {
+      "scratchpad.C": "cpp",
+      "iosfwd": "cpp",
+      "ios": "cpp",
+      "iostream": "cpp",
+      "sol_4_2.C": "cpp",
+      "sol_4_3.C": "cpp"
+   }
+}
