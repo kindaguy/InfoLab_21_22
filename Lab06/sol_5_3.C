@@ -5,18 +5,20 @@
 
 using namespace std;
 
-float media(float [], int);
-float devstd(float [], int);
-float minimo(float [], int);
-float massimo(float [], int);
-int clean_out(float[], int);
-int eliminaSwap(float [], int dim, int pos);
-int eliminaShift(float [], int dim, int pos);
+float media(float*, int);
+float devstd(float *, int);
+float minimo(float *, int);
+float massimo(float *, int);
+int clean_out(float *, int);
+int eliminaSwap(float *, int dim, int pos);
+int eliminaShift(float *, int dim, int pos);
 
 int main(){
 
    ifstream flusso_in;
-   int quanti = 0;
+   ofstream flusso_out;
+
+   int quanti = 0; //Inizializzare SEMPRE contatori!!!!
 
    float appo;
    float dati[100];
@@ -24,7 +26,7 @@ int main(){
    float m, devst, small, large;
    int quanti1,noutliers;
 
-   flusso_in.open("misure.dat");
+   flusso_in.open("misure1.dat");
    
    if(flusso_in.fail()){
       cout << endl << "Problema apertura file! Esco! \n";
@@ -33,6 +35,8 @@ int main(){
 
    cout << endl << "File aperto. Carico....";
 
+
+   //Ciclo Spoletini
    flusso_in >> appo;
 
    
@@ -78,6 +82,30 @@ int main(){
    cout << endl;
 
 
+   flusso_out.open("risultati.dat");
+
+   //Stampe
+   flusso_out << endl << "Media: " << m;
+   flusso_out << endl << "Deviazione standard: " << devst;
+   flusso_out << endl << "Minimo: " << small;
+   flusso_out << endl << "Massimo: " << large;
+   flusso_out << endl << "Numero outliers: " << noutliers;
+
+   flusso_out << endl << "Prime tre componenti vettore ripulito:\n";
+   for(int i=0; i<3 and i<quanti; i++){
+      flusso_out<<setw(10)<<dati[i];
+      //setw(n): determina la dimensione del campo in cui
+      //viene scritto il numero. Comodo per stampe allineate.
+   }
+   flusso_out << endl;
+
+   flusso_out << endl << "Ultime tre componenti vettore ripulito:\n";
+   for(int i=quanti-1; i>= quanti-3 and i>=0; i--){
+      flusso_out<<setw(10)<<dati[i];
+   }
+   flusso_out << endl;
+
+   flusso_out.close();
 
    return 0;
 }
@@ -110,7 +138,7 @@ float media(float v[], int dim){
 float devstd(float v[], int dim){
 
    float m;
-   float accu2;
+   float accu2 = 0;
 
    m= media(v,dim);
 
