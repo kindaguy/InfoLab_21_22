@@ -13,7 +13,7 @@ Scrivere un programma che:
 
 ## Esercizio 2
 
-Modificare l'Esercizio 3 del Laboratorio 4 in modo tale che i dati vengano caricati in un vettore dinamicamente allocato di dimensione pari alla numerosità dei dati. Il file contenente i dati è __misure.dat__. Attenzione: ho modificato i dati inserendo degli outliers ;-)
+Modificare l'Esercizio 3 del Laboratorio 5 in modo tale che i dati vengano caricati in un vettore dinamicamente allocato di dimensione pari alla numerosità dei dati. Il file contenente i dati è __misure.dat__. Attenzione: ho modificato i dati inserendo degli outliers ;-)
 
 ## Esercizio 3
 
