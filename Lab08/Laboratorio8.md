@@ -8,19 +8,19 @@ Prima di cominciare ci doteremo di tutti gli strumenti necessari alla generazion
 
 
 ## Esercizio 1
-Stimiamo _pigreco_ usando la tecnica Monte Carlo discussa a lezione. Supporremo che la circonferenza _A_ abbia centro nel punto O=(0,0) e raggio unitario. I punti verranno invece sparati a caso nel quadrato _E_ di lato 2 anch'esso con centro (punto di intersezione delle diagonali) nell'origine.  Struttureremo la soluzione come segue:
+Stimiamo _pigreco_ usando la tecnica Monte Carlo discussa a lezione. Supporremo che il quarto di  circonferenza (nel primo quadrante) _A_ abbia centro nel punto O=(0,0) e raggio unitario. I punti verranno invece sparati a caso nel quadrato _E_ di lato 1 con spigolo in basso a sinistra nell'origine.  Struttureremo la soluzione come segue:
 
 1. Definire una funzione
 
 __bool withincircle(double x, double y)__
 
- che, presa in ingresso una coppia di valori __double__ (la coordinata x e y rispettivamente di un punto estratto a caso in _E_) restituisca __true__ se il punto corrispondente cade all'interno di una circonferenza di raggio unitario centrata nell'origine, __false__ atrimenti.
+ che, presa in ingresso una coppia di valori __double__ (la coordinata x e y rispettivamente di un punto estratto a caso in _E_) restituisca __true__ se il punto corrispondente cade all'interno di _A_, __false__ atrimenti.
 
 2. Definire una funzione 
 
 __int countwithin(int n)__
 
-che, preso in ingresso un valore intero _n_, estragga _n_ punti a caso nel quadrato di lato 2 e centro nell'origine, e restituisca il numero di punti che cadono all'interno di una circonferenza di raggio unitario e centro nell'origine. A tal fine, la funzione dovrà usare la funzione __withincircle__ definita al punto precedente.
+che, preso in ingresso un valore intero _n_, estragga _n_ punti a caso nel quadrato _E_, e restituisca il numero di punti che cadono all'interno di _A_. A tal fine, la funzione dovrà usare la funzione __withincircle__ definita al punto precedente.
 
 3. Definire una funzione
 
