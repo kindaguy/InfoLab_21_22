@@ -28,7 +28,7 @@ __double singlemeasure(int n)__
 
 che preso in ingresso il numero di punti a caso da utilizzare, fornisca una misura di _pigreco_ usando la relazione vista a lezione. 
 
-4. Fatto questo, scrivere un programma che fornisca una stima di _pigreco_ attraverso M=50 misure, ciascuna delle quali usa 100 punti estratti a caso. Il programma dovrà quindi calcolare la media e la varianza del campione del vettore di misure. La media del campione sarà  la nostra stima di _pigreco_, la varianza invece una misura della qualità  delle misure. Cosa succede alla varianza se invece di 100 punti usassimo 200,300,400,500  punti per ogni misura?
+4. Fatto questo, scrivere un programma che fornisca una stima di _pigreco_ attraverso M=50 rilevazioni, ciascuna delle quali usa 100 punti estratti a caso. Il programma dovrà quindi calcolare la media e la varianza del campione del vettore di rilevazioni. La media del campione sarà  la nostra stima di _pigreco_, la varianza invece una misura della qualità  delle misure. Cosa succede alla varianza se invece di 100 punti usassimo 200,300,400,500  punti per ogni misura?
 
 
 ## Esercizio 2
