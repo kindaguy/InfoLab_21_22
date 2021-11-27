@@ -8,15 +8,18 @@ using namespace std;
 
 int main(){
 
-   float a;
+   double a;
+
+   int appo;
 
    srand(time(NULL));
-
-   a = (float)rand()/RAND_MAX;
+   appo = rand();
+   a = ((double)appo)/((double)RAND_MAX);
 
    cout << endl << RAND_MAX << endl;
 
-
+   cout << appo << endl;
+   
    cout << endl << a <<endl;
 
    return 0;

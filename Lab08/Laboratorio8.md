@@ -8,7 +8,7 @@ Prima di cominciare ci doteremo di tutti gli strumenti necessari alla generazion
 
 
 ## Esercizio 1
-Stimiamo _pigreco_ usando la tecnica Monte Carlo discussa a lezione. Supporremo che il quarto di  circonferenza (nel primo quadrante) _A_ abbia centro nel punto O=(0,0) e raggio unitario. I punti verranno invece sparati a caso nel quadrato _E_ di lato 1 con spigolo in basso a sinistra nell'origine.  Struttureremo la soluzione come segue:
+Stimiamo $\pi$ usando la tecnica Monte Carlo discussa a lezione. Supporremo che il quarto di  circonferenza (nel primo quadrante) _A_ abbia centro nel punto O=(0,0) e raggio unitario. I punti verranno invece sparati a caso nel quadrato _E_ di lato 1 con spigolo in basso a sinistra nell'origine.  Struttureremo la soluzione come segue:
 
 1. Definire una funzione
 
@@ -24,11 +24,11 @@ che, preso in ingresso un valore intero _n_, estragga _n_ punti a caso nel quadr
 
 3. Definire una funzione
 
-__double singlemeasure(int n)__
+__double rilev(int n)__
 
-che preso in ingresso il numero di punti a caso da utilizzare, fornisca una misura di _pigreco_ usando la relazione vista a lezione. 
+che preso in ingresso il numero di punti a caso da utilizzare, fornisca una <u>rilevazione</u> di $\pi$ usando la relazione vista a lezione. 
 
-4. Fatto questo, scrivere un programma che fornisca una stima di _pigreco_ attraverso M=50 rilevazioni, ciascuna delle quali usa 100 punti estratti a caso. Il programma dovrà quindi calcolare la media e la varianza del campione del vettore di rilevazioni. La media del campione sarà  la nostra stima di _pigreco_, la varianza invece una misura della qualità  delle misure. Cosa succede alla varianza se invece di 100 punti usassimo 200,300,400,500  punti per ogni misura?
+4. Fatto questo, scrivere un programma che fornisca una stima di $\pi$ attraverso M=50 rilevazioni, ciascuna delle quali usa 100 punti estratti a caso. Il programma dovrà quindi calcolare la media e la varianza del campione del vettore di rilevazioni. La media del campione sarà  la nostra stima di $\pi$, la varianza invece una misura della qualità  della misura. Cosa succede alla varianza calcolata se invece di 100 punti usassimo 200,300,400,500  punti per ogni rilevazione?
 
 
 ## Esercizio 2
@@ -36,7 +36,7 @@ Fornire una stima Monte Carlo dell'integrale, usando, con attenzione, una delle 
 
  ![](integrale.jpeg)
  
- usando M=20 _misure_ ciscuna delle quali usa _k=50_ punti estratti a caso nell'intervallo [0,2]. Calcolare la stima dell'integrale (media delle _M_ misure) e la deviazione standard del campione delle misure. Cosa succede se usiamo _k=100,150,200_ punti per ogni misura? 
+ usando M=20 _misure_ ciscuna delle quali usa _k=50_ punti estratti a caso nell'intervallo [0,2]. Calcolare la stima dell'integrale (media delle _M_ misure) e la deviazione standard del campione delle misure. Cosa succede se usiamo _k=100,150,200_ punti per ogni misura? ATTENZIONE: fate riferimento alla vesione aggionrata delle slides, dove un errore (per cui mi scuso) è stato corretto.
  
  ## Esercizio 3
 
@@ -52,4 +52,4 @@ Fornire una stima Monte Carlo dell'integrale, usando, con attenzione, una delle 
 
  _y = x(time)+ $\epsilon$_
 
- Fissati i valori __x0 = 2, v = 0.3, u = 0.2__, usare la funzione __rileva__ per generare 100 coppie $(t_i,y_i)$ con $t_i = 0.2 * i, i=0,1,\ldots,99$. Registrare le coppie generate su un file dal nome __modo.dat__. Ogni riga del file dovrà contenere una coppia $t_i$ $y_i$, ciascuna registrata in un campo di ampiezza 12. Usare gli __iomanip__ visti.
+ Fissati i valori __x0 = 2, v = 0.3, u = 0.2__, usare la funzione __rileva__ per generare 100 coppie $(t_i,y_i)$ con $t_i = 0.2 * i, i=0,1,\ldots,99$. Registrare le coppie generate su un file dal nome __modo.dat__. Ogni riga del file dovrà contenere una coppia $t_i$ $y_i$, ciascuna registrata in un campo di ampiezza 12. Usare il modificatore __setw(...)__ della libreria __iomanip__.

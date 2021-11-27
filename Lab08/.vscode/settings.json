@@ -1,5 +1,11 @@
 {
    "files.associations": {
-      "acaso.C": "cpp"
+      "acaso.C": "cpp",
+      "sol.C": "cpp",
+      "sol_8_1.C": "cpp",
+      "sol_6_3.C": "cpp",
+      "sol_5_3.C": "cpp",
+      "sol_8_1 copy.C": "cpp",
+      "sol_8_1_ext.C": "cpp"
    }
 }
