@@ -15,5 +15,5 @@ double acasoGauss(double m,double s){
    double u1,u2;
    u1 = acasoDouble(0,1);
    u2 = acasoDouble(0,1);
-   return sqrt(-2*log(u1))*cos(2*PIGRECO*u2);  
+   return s*(sqrt(-2*log(u1))*cos(2*PIGRECO*u2))+m;  
 }

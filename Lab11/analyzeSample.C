@@ -46,6 +46,7 @@ int main(int argc, char ** argv){
    //.c_str() restituisce proprio un char []
    
    inizializza(&v,appo.c_str());
+   
 
    //Debug
    //for(int i=0; i<v.used; i++)

@@ -63,7 +63,7 @@ int main(int argc, char ** argv){
    filein.close();
    
    /*Generazione dati*/
-   if(argc !=3){ //Se il nome del file di ouput NON e` stato dato...
+   if(argc < 3){ //Se il nome del file di ouput NON e` stato dato...
       cout << endl << "Inserire nome file di output: " ;
       cin >> appo;
    }
@@ -76,7 +76,7 @@ int main(int argc, char ** argv){
    //Rispettiamo la specifica....
    fileout << "#" << setw(12)<< "t" << setw(12) << "x" <<  endl;
    
-   fileout << setw(13)<< 0 << setw(12) << x0;
+   fileout << setw(13)<< 0 << setw(12) << x0+acasoGauss(0,0.3);
    for(int i=1; i < NPUNTI; i++){
       poldo = x0+v*i*dt + acasoGauss(0,0.3);
       fileout << endl<< setw(13)<< i*dt << setw(12) << poldo;
