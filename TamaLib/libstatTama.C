@@ -42,3 +42,22 @@ float massimo(float v[], int dim){
     return max;
 
 }
+
+
+void linReg2(float x[],float y[], int dim, float * p_alpha, float * p_beta){
+
+   float ybar, xbar;
+   float accusotto = 0;
+   float accusopra = 0;
+
+   xbar = media(x,dim);
+   ybar = media(y,dim);
+
+
+   for(int i=0; i<dim; i++){
+      accusotto += pow(x[i]-xbar,2);
+      accusopra += (x[i]-xbar)*(y[i]-ybar);
+   }
+   *p_beta = accusopra/accusotto;
+   *p_alpha = ybar - (*p_beta)*xbar;
+}

@@ -1,0 +1,22 @@
+{
+   "files.associations": {
+      "fabs_test.C": "cpp",
+      "createLinSample.C": "cpp",
+      "acaso.C": "cpp",
+      "sol_8_1_ext.C": "cpp",
+      "sol_8_1.C": "cpp",
+      "sol_5_3.C": "cpp",
+      "libstatTama.C": "cpp",
+      "libRandomTama.C": "cpp",
+      "analyzeSample.C": "cpp",
+      "myArrayMisura.C": "cpp",
+      "sol_Es_10_1.C": "cpp",
+      "sfera.C": "cpp",
+      "sortWithLib.C": "cpp",
+      "tamaSorting.C": "cpp",
+      "sol_Es_10_2.C": "cpp",
+      "sol_Es_10_3.C": "cpp",
+      "libArray.C": "cpp",
+      "sol_Es_10_4.C": "cpp"
+   }
+}
