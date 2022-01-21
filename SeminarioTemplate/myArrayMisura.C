@@ -99,17 +99,18 @@ void ridimensiona(myArrayMisura *pm, int newdim){
 misura operator+(const misura& m1, const misura &m2){
 
    misura appo;
-   appo.t = m1.t + m2.t;
-   appo.x = m1.x + m2.x;
+   appo.t = m1.t+m2.t;
+   appo.x = m1.x+m2.x;
 
-   return appo;   
+   return appo;
+
 }
 
 misura operator/(const misura& m, const int &n){
+
    misura appo;
    appo.t = m.t/n;
    appo.x = m.x/n;
 
-   return appo;   
-
+   return appo;
 }
